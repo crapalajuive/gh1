@@ -1,0 +1,13 @@
+to_delete
+.git
+.gitignore
+.dockerignore
+deployment-config.mk
+Dockerfile
+Dockerfile*
+1.txt
+notes.txt
+999-googletracker.js
+go.txt
+README.md
+COPYING

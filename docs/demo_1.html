@@ -1,0 +1,312 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo 1 - basic page &#8212; demo 1 0.1.0 documentation</title>
+    
+  <link rel="stylesheet" href="_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.3da636dd464baa7582d2.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="demo 2 - sphinx pages" href="demo_2.html" />
+    <link rel="prev" title="demo 1" href="index.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="index.html">
+  
+  <img src="_static/logo_simple.svg" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">demo 1 0.1.0 documentation</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <p class="caption collapsible-parent">
+ <span class="caption-text">
+  Contents:
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   demo 1 - basic page
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="demo_2.html">
+   demo 2 - sphinx pages
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="misc.html">
+   misc commands
+  </a>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/demo_1.rst.txt"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.rst</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pre">
+   pre
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#repo">
+   repo
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#make-changes">
+   make changes
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#alternative-branch-for-docs">
+   alternative branch for docs
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="demo-1-basic-page">
+<h1>demo 1 - basic page<a class="headerlink" href="#demo-1-basic-page" title="Permalink to this headline">¶</a></h1>
+<div class="output topic">
+<p class="topic-title">Abstract</p>
+<blockquote>
+<div><div class="line-block">
+<div class="line">how to setup github pages for a repository</div>
+<div class="line">line 2</div>
+</div>
+</div></blockquote>
+</div>
+<div class="align-center figure">
+<a class="reference external image-reference" href="_static/github-icon.svg"><img alt="gh-pages" height="125" src="_images/github-icon.svg" width="128" /></a>
+</div>
+<div class="section" id="pre">
+<h2>pre<a class="headerlink" href="#pre" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>github account</p></li>
+<li><p>git / github knowledge</p></li>
+<li><p>git installed locally</p></li>
+</ul>
+</div>
+<div class="section" id="repo">
+<h2>repo<a class="headerlink" href="#repo" title="Permalink to this headline">¶</a></h2>
+<p>&#64;github</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>create new repo &quot;new_repo&quot;</dt><dd><ul>
+<li><p>priv/pub (either)</p></li>
+<li><p>add Readme file ( so not empty repo )</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<p>&#64;local (terminal)</p>
+<ul class="simple">
+<li><p>mkdir my_repos ; cd my_repos</p></li>
+<li><p>git clone <a class="reference external" href="https://github">https://github</a>/&lt;user&gt;/new_repo.git</p></li>
+<li><p>cd new_repo</p></li>
+<li><p>create index.html</p></li>
+<li><p>git status # main branch</p></li>
+<li><p>git add .</p></li>
+<li><p>git commit -m &quot;initial commit&quot;</p></li>
+<li><p>git push origin main</p></li>
+</ul>
+<p>&#64;github</p>
+<ul class="simple">
+<li><p>settings -&gt; github pages -&gt; source = main (root)</p></li>
+<li><p>site generated: <a class="reference external" href="https:/">https:/</a>/&lt;user&gt;.github.io/new_repo</p></li>
+</ul>
+</div>
+<div class="section" id="make-changes">
+<h2>make changes<a class="headerlink" href="#make-changes" title="Permalink to this headline">¶</a></h2>
+<p>&#64;local</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git checkout -b styling
+create styles.css
+git status <span class="c1"># styling branch</span>
+git add .
+git commit -m <span class="s2">&quot;initial css&quot;</span>
+git push origin styling
+</pre></div>
+</div>
+<p>&#64;github</p>
+<ul class="simple">
+<li><p>pull request to merge into the main branch</p></li>
+</ul>
+</div>
+<div class="section" id="alternative-branch-for-docs">
+<h2>alternative branch for docs<a class="headerlink" href="#alternative-branch-for-docs" title="Permalink to this headline">¶</a></h2>
+<p>&#64;local</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git checkout -b docs
+git push origin docs
+</pre></div>
+</div>
+<p>&#64;github</p>
+<ul class="simple">
+<li><p>settings -&gt; github pages -&gt; source = docs (root)</p></li>
+<li><p>site generated is still: <a class="reference external" href="https:/">https:/</a>/&lt;user&gt;.github.io/new_repo</p></li>
+</ul>
+</div>
+</div>
+
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="index.html" title="previous page">demo 1</a>
+    <a class='right-next' id="next-link" href="demo_2.html" title="next page">demo 2 - sphinx pages</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By crapalajuive<br/>
+        
+            &copy; Copyright 2021, crapalajuive.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="_static/js/index.3da636dd464baa7582d2.js"></script>
+
+
+    
+  </body>
+</html>
