@@ -25,7 +25,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'demo 1'
+project = 'doc tests'
 copyright = '2021, crapalajuive'
 author = 'crapalajuive'
 

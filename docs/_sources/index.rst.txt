@@ -3,6 +3,10 @@
 doc tests
 ==========
 
+.. warning::
+
+   just tests
+
 .. toctree::
    :maxdepth: 1
    :caption: Contents:
