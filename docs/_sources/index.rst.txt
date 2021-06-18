@@ -1,7 +1,7 @@
 .. |time| date:: %y%m%d_%H%M%S
 
-demo 1
-=======
+doc tests
+==========
 
 .. toctree::
    :maxdepth: 1
