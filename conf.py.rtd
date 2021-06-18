@@ -13,7 +13,7 @@
 # import os
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
-# import sphinx_rtd_theme
+import sphinx_rtd_theme
 
 ### markdown ?
 # import recommonmark.Parser
@@ -41,8 +41,8 @@ release = '0.1.0'
 extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.mathjax',
+    'sphinx_rtd_theme',
 ]
-#    'sphinx_rtd_theme',
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -69,8 +69,8 @@ pygments_style = None
 ## html_theme = 'alabaster'
 ## html_theme = 'basic'
 ## html_theme = 'sphinx-rtd-theme-common'
-# html_theme = 'sphinx_rtd_theme'
-html_theme = "sphinx_book_theme"
+html_theme = 'sphinx_rtd_theme'
+# html_theme = "sphinx_book_theme"
 
 ### add a logo - relative to _static
 html_logo = '_static/logo_simple.svg'
