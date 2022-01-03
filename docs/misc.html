@@ -169,6 +169,16 @@
    push an existing repository from the command line
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#github-pages">
+   GitHub Pages
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#refs">
+   refs
+  </a>
+ </li>
 </ul>
 
         </nav>
@@ -220,6 +230,32 @@ git branch -M main
 git push -u origin main
 </pre></div>
 </div>
+</div>
+<div class="section" id="github-pages">
+<h2>GitHub Pages<a class="headerlink" href="#github-pages" title="Permalink to this headline">¶</a></h2>
+<p>There're three places to populate your docs for your Github repository:</p>
+<ul class="simple">
+<li><p>docs/ folder</p></li>
+<li><p>master branch</p></li>
+<li><p>gh-pages branch</p></li>
+</ul>
+<p>It is recommended that you save your files to the ./docs subfolder of the
+master branch of your repository. Then select master branch /docs folder as
+your Github Pages source in your repositories' settings page.</p>
+<div class="align-center figure">
+<a class="reference external image-reference" href="_static/deploy-github-pages.png"><img alt="gh-pages" src="_images/deploy-github-pages.png" style="width: 396.0px; height: 226.5px;" /></a>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can also save files in the root directory and select master branch. You'll need to place a <strong>.nojekyll</strong> file in the deploy location (such as /docs or the gh-pages branch)</p>
+</div>
+</div>
+<div class="section" id="refs">
+<h2>refs<a class="headerlink" href="#refs" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions">https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions</a></p></li>
+<li><p><a class="reference external" href="https://docsify.js.org/#/deploy">https://docsify.js.org/#/deploy</a>?id=github-pages</p></li>
+</ul>
 </div>
 </div>
 

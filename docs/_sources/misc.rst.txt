@@ -44,3 +44,33 @@ push an existing repository from the command line
    git branch -M main
    git push -u origin main
 
+GitHub Pages
+------------
+
+There're three places to populate your docs for your Github repository:
+
+- docs/ folder
+- master branch
+- gh-pages branch
+
+It is recommended that you save your files to the ./docs subfolder of the
+master branch of your repository. Then select master branch /docs folder as
+your Github Pages source in your repositories' settings page.
+
+.. figure:: _static/deploy-github-pages.png
+      :alt: gh-pages
+      :align: center
+      :scale: 50%
+      :figclass: align-center
+      :target: _static/deploy-github-pages.png
+
+
+.. note::
+
+   You can also save files in the root directory and select master branch. You'll need to place a **.nojekyll** file in the deploy location (such as /docs or the gh-pages branch)
+
+refs
+-----
+
+- https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions
+- https://docsify.js.org/#/deploy?id=github-pages
