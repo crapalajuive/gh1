@@ -165,13 +165,13 @@
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#local-configure-settings-optional">
-   local configure settings ( optional )
+  <a class="reference internal nav-link" href="#git-local-configuration-optional">
+   git local configuration ( optional )
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#ssh-key">
-   ssh key
+  <a class="reference internal nav-link" href="#ssh-key-configuration-optional">
+   ssh key configuration ( optional )
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -203,9 +203,9 @@
   <div class="section" id="misc-commands">
 <h1>misc commands<a class="headerlink" href="#misc-commands" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
-<li><p>ssh: git clone <a class="reference external" href="mailto:git&#37;&#52;&#48;github&#46;com">git<span>&#64;</span>github<span>&#46;</span>com</a>:crapalajuive/the_one.git        # requires public SSH keys in your GitHub account</p></li>
-<li><p>http: git clone <a class="reference external" href="https://github.com/crapalajuive/the_one.git">https://github.com/crapalajuive/the_one.git</a></p></li>
-<li><p>cli: gh repo clone crapalajuive/the_one                       # requires github cli installed</p></li>
+<li><p>ssh: git clone <a class="reference external" href="mailto:git&#37;&#52;&#48;github&#46;com">git<span>&#64;</span>github<span>&#46;</span>com</a>:crapalajuive/gh1.git            # requires public SSH keys in your GitHub account</p></li>
+<li><p>http: git clone <a class="reference external" href="https://github.com/crapalajuive/gh1.git">https://github.com/crapalajuive/gh1.git</a></p></li>
+<li><p>cli: gh repo clone crapalajuive/gh1                           # requires github cli installed</p></li>
 </ul>
 <p>config:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">core</span><span class="p">]</span>
@@ -214,7 +214,7 @@
         <span class="n">bare</span> <span class="o">=</span> <span class="n">false</span>
         <span class="n">logallrefupdates</span> <span class="o">=</span> <span class="n">true</span>
 <span class="p">[</span><span class="n">remote</span> <span class="s2">&quot;origin&quot;</span><span class="p">]</span>
-        <span class="n">url</span> <span class="o">=</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">crapalajuive</span><span class="o">/</span><span class="n">the_one</span><span class="o">.</span><span class="n">git</span>
+        <span class="n">url</span> <span class="o">=</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">crapalajuive</span><span class="o">/</span><span class="n">gh1</span><span class="o">.</span><span class="n">git</span>
         <span class="n">fetch</span> <span class="o">=</span> <span class="o">+</span><span class="n">refs</span><span class="o">/</span><span class="n">heads</span><span class="o">/*</span><span class="p">:</span><span class="n">refs</span><span class="o">/</span><span class="n">remotes</span><span class="o">/</span><span class="n">origin</span><span class="o">/*</span>
 <span class="p">[</span><span class="n">branch</span> <span class="s2">&quot;main&quot;</span><span class="p">]</span>
         <span class="n">remote</span> <span class="o">=</span> <span class="n">origin</span>
@@ -228,17 +228,20 @@ git init
 git add README.md
 git commit -m <span class="s2">&quot;first commit&quot;</span>
 git branch -M main
-git remote add origin git@github.com:crapalajuive/the_one.git
+git remote add origin git@github.com:crapalajuive/gh1.git
 git push -u origin main
 </pre></div>
 </div>
 </div>
-<div class="section" id="local-configure-settings-optional">
-<h2>local configure settings ( optional )<a class="headerlink" href="#local-configure-settings-optional" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="git-local-configuration-optional">
+<h2>git local configuration ( optional )<a class="headerlink" href="#git-local-configuration-optional" title="Permalink to this headline">¶</a></h2>
 <p>Generate new github token</p>
 <div class="align-center figure">
 <a class="reference external image-reference" href="_static/github_token.png"><img alt="Generate new github token" src="_images/github_token.png" style="width: 563.5px; height: 216.5px;" /></a>
 </div>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/settings/tokens">https://github.com/settings/tokens</a></p></li>
+</ul>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># still in repo directory, run</span>
 git config --local user.name crapalajuive
 git config --local user.email user@domain.com
@@ -251,6 +254,7 @@ git config --local -l
 <span class="p">[</span><span class="n">user</span><span class="p">]</span>
         <span class="n">email</span> <span class="o">=</span> <span class="n">user</span><span class="nd">@domain</span><span class="o">.</span><span class="n">com</span>
         <span class="n">name</span> <span class="o">=</span> <span class="n">crapalajuive</span>
+
 <span class="c1"># this setting uses ~/.git-credentials to store github login credentials</span>
 <span class="p">[</span><span class="n">credential</span><span class="p">]</span>
         <span class="n">helper</span> <span class="o">=</span> <span class="n">store</span>
@@ -259,7 +263,7 @@ git config --local -l
 <span class="o">-----------</span> <span class="n">snip</span> <span class="o">--------</span>
 </pre></div>
 </div>
-<p>~/.git-credentials:</p>
+<p>example ~/.git-credentials:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-----------</span> <span class="n">snip</span> <span class="o">--------</span>
 <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">user</span><span class="o">%</span><span class="mi">40</span><span class="n">domain</span><span class="o">.</span><span class="n">com</span><span class="p">:</span><span class="o">&lt;</span><span class="n">token</span><span class="o">&gt;</span><span class="nd">@github</span><span class="o">.</span><span class="n">com</span>
 <span class="o">-----------</span> <span class="n">snip</span> <span class="o">--------</span>
@@ -277,20 +281,42 @@ git config --local -l
 <p>git config --global credential.&quot;<a class="reference external" href="https://somegithost.com">https://somegithost.com</a>&quot;.username MyUserName</p>
 </div>
 </div>
-<div class="section" id="ssh-key">
-<h2>ssh key<a class="headerlink" href="#ssh-key" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>todo</p></li>
-</ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Copy</span> <span class="n">the</span> <span class="n">contents</span> <span class="n">of</span> <span class="n">the</span> <span class="n">file</span> <span class="o">~/.</span><span class="n">ssh</span><span class="o">/</span><span class="n">id_rsa</span><span class="o">.</span><span class="n">pub</span> <span class="n">to</span> <span class="n">your</span> <span class="n">SSH</span> <span class="n">keys</span> <span class="ow">in</span> <span class="n">your</span> <span class="n">GitHub</span> <span class="n">account</span> <span class="n">settings</span> <span class="p">(</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">settings</span><span class="o">/</span><span class="n">keys</span><span class="p">)</span><span class="o">.</span>
-<span class="n">ssh</span> <span class="o">-</span><span class="n">T</span> <span class="n">git</span><span class="nd">@github</span><span class="o">.</span><span class="n">com</span>
-<span class="n">git</span> <span class="n">remote</span> <span class="nb">set</span><span class="o">-</span><span class="n">url</span> <span class="n">origin</span> <span class="n">git</span><span class="nd">@github</span><span class="o">.</span><span class="n">com</span><span class="p">:</span><span class="n">username</span><span class="o">/</span><span class="n">your</span><span class="o">-</span><span class="n">repository</span><span class="o">.</span><span class="n">git</span>
+<div class="section" id="ssh-key-configuration-optional">
+<h2>ssh key configuration ( optional )<a class="headerlink" href="#ssh-key-configuration-optional" title="Permalink to this headline">¶</a></h2>
+<p>Generate ssh key (for github site or deploy key per repository)</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> ~/.ssh/
+ssh-keygen -v -t rsa -b <span class="m">4096</span> -f <span class="si">${</span><span class="nv">PWD</span><span class="si">}</span>/id_rsa.github -C <span class="s2">&quot;crapalajuive@github&quot;</span> -N <span class="s2">&quot;&quot;</span>
+<span class="c1"># or</span>
+ssh-keygen -v -t ed25519 -a <span class="m">100</span> -f <span class="si">${</span><span class="nv">PWD</span><span class="si">}</span>/id_ed25519.github -C <span class="s2">&quot;crapalajuive@github&quot;</span> -N <span class="s2">&quot;&quot;</span>
 </pre></div>
+</div>
+<p>Copy the contents of the file ~/.ssh/id_rsa.github.pub to your SSH keys in your GitHub account settings <a class="reference external" href="https://github.com/settings/keys">https://github.com/settings/keys</a></p>
+<p>~/.ssh/config:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-------------</span> <span class="n">snip</span> <span class="o">---------------</span>
+<span class="n">Host</span> <span class="n">github</span><span class="o">.</span><span class="n">com</span>
+  <span class="n">IdentityFile</span> <span class="o">~/.</span><span class="n">ssh</span><span class="o">/</span><span class="n">id_rsa</span><span class="o">.</span><span class="n">github</span>
+<span class="o">-------------</span> <span class="n">snip</span> <span class="o">---------------</span>
+</pre></div>
+</div>
+<p>test connection</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh -T git@github.com
+</pre></div>
+</div>
+<p>clone repo</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone ssh://git@github.com/crapalajuive/gh1.git
+git config --local user.name crapalajuive
+git config --local user.email user@domain.com
+git config --local -l
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>git remote set-url origin <a class="reference external" href="mailto:git&#37;&#52;&#48;github&#46;com">git<span>&#64;</span>github<span>&#46;</span>com</a>:username/your-repository.git</p>
 </div>
 </div>
 <div class="section" id="push-an-existing-repository-from-the-command-line">
 <h2>push an existing repository from the command line<a class="headerlink" href="#push-an-existing-repository-from-the-command-line" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git remote add origin git@github.com:crapalajuive/the_one.git
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git remote add origin git@github.com:crapalajuive/gh1.git
 git branch -M main
 git push -u origin main
 </pre></div>
@@ -322,6 +348,7 @@ your Github Pages source in your repositories' settings page.</p>
 <li><p><a class="reference external" href="https://docsify.js.org/#/deploy">https://docsify.js.org/#/deploy</a>?id=github-pages</p></li>
 <li><p><a class="reference external" href="https://crapalajuive.github.io/gh1/">https://crapalajuive.github.io/gh1/</a></p></li>
 <li><p><a class="reference external" href="https://github.com/settings/tokens">https://github.com/settings/tokens</a></p></li>
+<li><p><a class="reference external" href="https://github.com/settings/keys">https://github.com/settings/keys</a></p></li>
 <li><p>hugo?</p></li>
 <li><p><a class="reference external" href="https://github.com/crapalajuive/gh1/settings/pages">https://github.com/crapalajuive/gh1/settings/pages</a></p></li>
 </ul>
