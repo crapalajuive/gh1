@@ -74,3 +74,4 @@ refs
 
 - https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions
 - https://docsify.js.org/#/deploy?id=github-pages
+- https://crapalajuive.github.io/gh1/
