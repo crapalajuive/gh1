@@ -35,6 +35,48 @@ create a new repository on the command line
    git remote add origin git@github.com:crapalajuive/the_one.git
    git push -u origin main
 
+local configure settings ( optional )
+---------------------------------------------------
+
+- get token from github
+
+.. code:: bash
+
+   # still in repo directory, run
+   git config --local user.name crapalajuive
+   git config --local user.email user@domain.com
+   git config --local credential.helper store
+   git config --local -l
+
+.git/config::
+
+   ----------- snip --------
+   [user]
+           email = user@domain.com
+           name = crapalajuive
+   # this setting uses ~/.git-credentials to store github login credentials
+   [credential]
+           helper = store
+   #       helper = cache --timeout=3600
+   #       helper = cache
+   ----------- snip --------
+
+
+~/.git-credentials::
+
+   ----------- snip --------
+   https://user%40domain.com:<token>@github.com
+   ----------- snip --------
+
+.. note::
+
+   | https://gituser:gitpassword@domain.xxx
+   | Where domain.XXX could be github.com, bitbucket.org, or others
+
+.. note::
+
+   git config --global credential."https://somegithost.com".username MyUserName
+
 push an existing repository from the command line
 ---------------------------------------------------
 
