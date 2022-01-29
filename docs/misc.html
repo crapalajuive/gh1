@@ -170,6 +170,11 @@
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ssh-key">
+   ssh key
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#push-an-existing-repository-from-the-command-line">
    push an existing repository from the command line
   </a>
@@ -230,9 +235,10 @@ git push -u origin main
 </div>
 <div class="section" id="local-configure-settings-optional">
 <h2>local configure settings ( optional )<a class="headerlink" href="#local-configure-settings-optional" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>get token from github</p></li>
-</ul>
+<p>Generate new github token</p>
+<div class="align-center figure">
+<a class="reference external image-reference" href="_static/github_token.png"><img alt="Generate new github token" src="_images/github_token.png" style="width: 563.5px; height: 216.5px;" /></a>
+</div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># still in repo directory, run</span>
 git config --local user.name crapalajuive
 git config --local user.email user@domain.com
@@ -271,6 +277,17 @@ git config --local -l
 <p>git config --global credential.&quot;<a class="reference external" href="https://somegithost.com">https://somegithost.com</a>&quot;.username MyUserName</p>
 </div>
 </div>
+<div class="section" id="ssh-key">
+<h2>ssh key<a class="headerlink" href="#ssh-key" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>todo</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Copy</span> <span class="n">the</span> <span class="n">contents</span> <span class="n">of</span> <span class="n">the</span> <span class="n">file</span> <span class="o">~/.</span><span class="n">ssh</span><span class="o">/</span><span class="n">id_rsa</span><span class="o">.</span><span class="n">pub</span> <span class="n">to</span> <span class="n">your</span> <span class="n">SSH</span> <span class="n">keys</span> <span class="ow">in</span> <span class="n">your</span> <span class="n">GitHub</span> <span class="n">account</span> <span class="n">settings</span> <span class="p">(</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">settings</span><span class="o">/</span><span class="n">keys</span><span class="p">)</span><span class="o">.</span>
+<span class="n">ssh</span> <span class="o">-</span><span class="n">T</span> <span class="n">git</span><span class="nd">@github</span><span class="o">.</span><span class="n">com</span>
+<span class="n">git</span> <span class="n">remote</span> <span class="nb">set</span><span class="o">-</span><span class="n">url</span> <span class="n">origin</span> <span class="n">git</span><span class="nd">@github</span><span class="o">.</span><span class="n">com</span><span class="p">:</span><span class="n">username</span><span class="o">/</span><span class="n">your</span><span class="o">-</span><span class="n">repository</span><span class="o">.</span><span class="n">git</span>
+</pre></div>
+</div>
+</div>
 <div class="section" id="push-an-existing-repository-from-the-command-line">
 <h2>push an existing repository from the command line<a class="headerlink" href="#push-an-existing-repository-from-the-command-line" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git remote add origin git@github.com:crapalajuive/the_one.git
@@ -304,6 +321,9 @@ your Github Pages source in your repositories' settings page.</p>
 <li><p><a class="reference external" href="https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions">https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions</a></p></li>
 <li><p><a class="reference external" href="https://docsify.js.org/#/deploy">https://docsify.js.org/#/deploy</a>?id=github-pages</p></li>
 <li><p><a class="reference external" href="https://crapalajuive.github.io/gh1/">https://crapalajuive.github.io/gh1/</a></p></li>
+<li><p><a class="reference external" href="https://github.com/settings/tokens">https://github.com/settings/tokens</a></p></li>
+<li><p>hugo?</p></li>
+<li><p><a class="reference external" href="https://github.com/crapalajuive/gh1/settings/pages">https://github.com/crapalajuive/gh1/settings/pages</a></p></li>
 </ul>
 </div>
 </div>

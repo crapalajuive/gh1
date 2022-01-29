@@ -38,7 +38,14 @@ create a new repository on the command line
 local configure settings ( optional )
 ---------------------------------------------------
 
-- get token from github
+Generate new github token
+
+.. figure:: _static/github_token.png
+      :alt: Generate new github token
+      :align: center
+      :scale: 50%
+      :figclass: align-center
+      :target: _static/github_token.png
 
 .. code:: bash
 
@@ -77,6 +84,17 @@ local configure settings ( optional )
 
    git config --global credential."https://somegithost.com".username MyUserName
 
+ssh key
+--------
+
+- todo
+
+::
+
+   Copy the contents of the file ~/.ssh/id_rsa.pub to your SSH keys in your GitHub account settings (https://github.com/settings/keys).
+   ssh -T git@github.com
+   git remote set-url origin git@github.com:username/your-repository.git
+
 push an existing repository from the command line
 ---------------------------------------------------
 
@@ -85,6 +103,7 @@ push an existing repository from the command line
    git remote add origin git@github.com:crapalajuive/the_one.git
    git branch -M main
    git push -u origin main
+
 
 GitHub Pages
 ------------
@@ -117,3 +136,6 @@ refs
 - https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions
 - https://docsify.js.org/#/deploy?id=github-pages
 - https://crapalajuive.github.io/gh1/
+- https://github.com/settings/tokens
+- hugo?
+- https://github.com/crapalajuive/gh1/settings/pages
